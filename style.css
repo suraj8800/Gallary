@@ -1,9 +1,9 @@
-body {
+body{
     margin: 0px;
     padding: 0px;
 }
 
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -13,92 +13,46 @@ body {
     display: flex;
 }
 
-#action-bar * {
+#action-bar *{
     border: 3px solid white;
-    border-radius: 5px;
+    border-radius: 3px;
     margin: 10px 5px;
-    padding: 5px;
+    padding: 4px;
     cursor: pointer;
+    
 }
 
-#action-bar span:hover {
-    background-color: white;
-}
-
-#action-bar select {
-    background-color: cyan;
-}
-
-#action-bar select option {
+#action-bar select{
     margin: 10px;
-    border-bottom: 2px solid teal;
+    background-color: aquamarine;
+}
+
+#action-bar span:hover{
+    background-color: aliceblue;
 }
 
 #content {
+    
     height: 92vh;
     display: flex;
 }
 
-
-#content-list {
-    border: 2px solid red;
+#content-list{
+    border: 5px solid red;
     width: 15vw;
-    padding: 5px;
 }
 
-#content-details {
+#content-detail {
     border: 5px solid blue;
     width: 85vw;
 }
 
-#overlay {
-    display: none;
+#overlay{
+    height: 100px;
+    width: 100px;
+    background-color: red;
     position: fixed;
-    height: 92vh;
-    width: 100vw;
-    top:8vh;
-    left:0%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 2;
-    cursor: pointer;
-}
-
-#text {
-    position: absolute;
-    font-size: 50px;
-    color: white;
-    width: 50%;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    
-    /* vertically aligning text within div*/
-    line-height: 100px;
-    vertical-align:middle;
-
-    text-align: center; /*horizontally align text within this div*/
-    text-decoration: underline;
-}
-
-#new-image {
-    background-color: teal;
-    border-radius: 5px;
-    text-align: center;
-    line-height: 100px;
-    vertical-align: middle;
-    cursor: pointer;
-    color: white;
-    font-weight: 900;
-    margin: 5px;
-}
-
-#new-image:hover {
-    transform: scale(1.02);
-}
-
-#image-list{
-    height: calc(92vh - 120px);
-    overflow-y: auto;
-    overflow-x: hidden;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
 }
