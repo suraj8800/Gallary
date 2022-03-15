@@ -38,21 +38,110 @@ body{
 }
 
 #content-list{
-    border: 5px solid red;
+    
     width: 15vw;
+    padding: 5px;
 }
 
 #content-detail {
-    border: 5px solid blue;
+    border: 2px solid blue;
     width: 85vw;
 }
 
-#overlay{
-    height: 100px;
-    width: 100px;
-    background-color: red;
+#content-details-overlay {
+    display: none;
+    height: 92vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.5;
     position: fixed;
-    z-index: 1;
-    top: 0%;
+    z-index: 2;
+    top: 8vh;
+    left: 15vw;
+    cursor: pointer;
+}
+
+#overlay{
+    height: 92vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 2;
+    top: 8vh;
     left: 0%;
+    cursor: pointer;
+}
+
+#text{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 100px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#new-slide {
+    background-color: teal;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: white;
+    font-weight: 900;
+    margin: 5px;
+}
+
+#new-slide:hover{
+    transform: scale(1.02);
+}
+
+#slide-list {
+    height: calc(92vh - 120px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#create-slide{
+    display: none;
+}
+
+#create-slide div {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#create-slide textarea{
+    width: 90%;
+    height: 60vh;
+    font-size: 30px;
+    border-radius: 4px;
+}
+
+#create-slide input {
+    width: 90%;
+    height: 10vh;
+    font-size: 30px;
+    border-radius: 4px;
+}
+
+#create-slide button{
+    padding: 20px;
+    border-radius: 4px;
+    background-color: palegreen;
+    color: white;
+    cursor: pointer;
+
+}
+
+#show-slide{
+    display: none;
 }
